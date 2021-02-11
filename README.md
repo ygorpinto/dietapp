@@ -6,7 +6,7 @@ Um APP que busca em uma API receitas de diversos pratos, informando os ingredien
 Next JS
 Styled Components
 
-## [teste aqui](dietapp.ygorpinto.vercel.app)
+## ![teste aqui](dietapp.ygorpinto.vercel.app)
 
 ## Demo
 
