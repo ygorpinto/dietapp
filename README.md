@@ -10,7 +10,7 @@ Styled Components
 
 ## Demo
 
-[](./demo.png)
+![](diet-app/demo.png)
 
 
 Feito com 💖 por Ygor Ferreira.
