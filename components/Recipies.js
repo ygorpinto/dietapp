@@ -1,12 +1,12 @@
 const Recipies = ({title,calories,image, ingredients}) => {
     return (
-        <div>
-            <h1>{title}</h1>
-            <img src={image}></img>
-            <p>Calories: {Math.round(calories)} k/cal</p>
-            <p>ingredients:</p>
-            <ul>{ingredients.map((ing)=>(
-                <li>{ing.text}</li>
+        <div className="itens">
+            <h1 className="title">{title}</h1>
+            <img className="img" src={image}></img>
+            <p className="txt"><strong>Calories:</strong> {Math.round(calories)} k/cal</p>
+            <p className="menutitle"><strong>Ingredients:</strong></p>
+            <ul className="menu">{ingredients.map((ing)=>(
+                <li className="menuitens">{ing.text}</li>
             ))}</ul>
         </div>
     )

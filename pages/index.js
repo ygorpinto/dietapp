@@ -1,6 +1,12 @@
 import { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import Recipies from '../components/Recipies';
+import Button from '../components/Button'
+import Input from '../components/Input'
+import Form from '../components/Form'
+import Container from '../components/Container';
+import Title from '../components/Title';
+
 
 
 export default function Home() {
@@ -29,15 +35,17 @@ export default function Home() {
   }
 
   return (
-    <div>
-      <form onSubmit={getEnd}>
-        <input 
+    <>
+    <Container>
+      <Title>Busca Receitas</Title>
+      <Form onSubmit={getEnd}>
+        <Input 
         type="text"
         value={search}
         onChange={e=>setsearch(e.target.value)}
-        ></input>
-        <button type="submit">Buscar</button>
-      </form>
+        ></Input>
+        <Button type="submit">Buscar</Button>
+      </Form>
       {query.map((recipe)=>(
         <Recipies 
         title={recipe.recipe.label}
@@ -46,6 +54,7 @@ export default function Home() {
         ingredients={recipe.recipe.ingredients}
         />
       ))}
-    </div>
+      </Container>
+    </>
   )
 }
