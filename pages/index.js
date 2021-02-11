@@ -6,6 +6,7 @@ import Input from '../components/Input'
 import Form from '../components/Form'
 import Container from '../components/Container';
 import Title from '../components/Title';
+import Content from '../components/Content';
 
 
 
@@ -43,9 +44,10 @@ export default function Home() {
         type="text"
         value={search}
         onChange={e=>setsearch(e.target.value)}
+        placeholder="Digite uma comida aqui"
         ></Input>
-        <Button type="submit">Buscar</Button>
       </Form>
+      <Content>
       {query.map((recipe)=>(
         <Recipies 
         title={recipe.recipe.label}
@@ -54,6 +56,7 @@ export default function Home() {
         ingredients={recipe.recipe.ingredients}
         />
       ))}
+      </Content>
       </Container>
     </>
   )
