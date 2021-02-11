@@ -6,11 +6,11 @@ Um APP que busca em uma API receitas de diversos pratos, informando os ingredien
 Next JS
 Styled Components
 
-## ![teste aqui](dietapp.ygorpinto.vercel.app)
+## [teste aqui](https://dietapp.ygorpinto.vercel.app/)
 
 ## Demo
 
-![](diet-app/demo.png)
+![](https://raw.githubusercontent.com/ygorpinto/dietapp/main/demo.png)
 
 
 Feito com 💖 por Ygor Ferreira.
